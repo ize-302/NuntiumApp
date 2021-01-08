@@ -8,9 +8,6 @@ import {
 } from "../../../components/Inputs";
 import { PrimaryButton } from "../../../components/Buttons";
 import { colors, getHeight } from "../../../styles";
-import { Colors } from "react-native/Libraries/NewAppScreen";
-import AltAuth from "../../../components/AltAuth";
-import Navigation from "../../..";
 
 const Signup = ({ navigation }: ScreenProp) => {
   const styles = getStyles();
