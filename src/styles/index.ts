@@ -42,4 +42,6 @@ export const getHeight = (value: number) => getComputed(value, "h");
 
 export const colors = {
   primary: "#475AD7",
+  blackPrimary: "#333647",
+  grayPrimary: "#7C82A1",
 };

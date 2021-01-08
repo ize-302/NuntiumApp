@@ -6,20 +6,56 @@ const styles = () => {
     content: {
       flexDirection: "column",
       justifyContent: "space-between",
-      paddingVertical: getHeight(20),
+      height: "100%",
+    },
+    upperContent: {
+      paddingTop: getHeight(70),
+      height: "65%",
+      flexDirection: "column",
+      justifyContent: "space-between",
+    },
+    bottomContent: {
+      height: "35%",
+      flexDirection: "column",
+      justifyContent: "space-around",
+      alignItems: "center",
+    },
+    heading: {
+      fontSize: getHeight(24),
+      textAlign: "center",
+      color: colors.blackPrimary,
+      marginBottom: getHeight(24),
+      fontFamily: "SF_Medium",
+    },
+    headingBigger: {
+      fontSize: getHeight(30),
+      textAlign: "center",
+      color: colors.blackPrimary,
+      marginBottom: getHeight(24),
+      fontFamily: "SF_Bold",
+    },
+
+    subHeading: {
+      fontSize: getHeight(16),
+      textAlign: "center",
+      paddingHorizontal: getWidth(50),
+      color: colors.grayPrimary,
+      fontFamily: "SF_Regular",
+      lineHeight: getHeight(24),
     },
     dotStyle: {
-      backgroundColor: "#aaa",
-      width: getWidth(20),
-      height: getHeight(8),
+      backgroundColor: "#ccc",
+      width: getWidth(16),
+      height: getHeight(16),
+      borderRadius: 50,
     },
     activedotStyle: {
       backgroundColor: colors.primary,
-      width: getWidth(20),
-      height: getHeight(4),
+      width: getWidth(24),
+      height: getHeight(8),
     },
     dots: {
-      width: getWidth(100),
+      width: "100%",
     },
     carouselActionButtons: {
       flexDirection: "row",

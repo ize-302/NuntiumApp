@@ -6,6 +6,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 // screens
 import AppIntroScreen from "./screens/AppIntro";
+import GetStartedScreen from "./screens/AppIntro/getStarted";
 
 const Stack = createStackNavigator();
 
@@ -14,6 +15,7 @@ const Navigation = () => {
     <NavigationContainer fallback={<View />}>
       <Stack.Navigator initialRouteName="AppIntro" headerMode="none">
         <Stack.Screen name="AppIntro" component={AppIntroScreen} />
+        <Stack.Screen name="GetStarted" component={GetStartedScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

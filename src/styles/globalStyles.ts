@@ -12,7 +12,7 @@ const styles = () => {
       height: "100%",
     },
     container: {
-      paddingHorizontal: getWidth(10),
+      paddingHorizontal: getWidth(20),
     },
   });
 };
