@@ -29,7 +29,7 @@ const Signin = ({ navigation }: ScreenProp) => {
           <View>
             <PrimaryCustomTextInput placeholder="Email Address" icon="mail" />
             <View style={{ marginVertical: getHeight(8) }}></View>
-            <PasswordCustomTextInput placeholder="Password" />
+            <PasswordCustomTextInput placeholder="Password" icon="" />
             <TouchableOpacity style={styles.forgotPassword}>
               <Text style={[styles.forgotPasswordText]}>Forgot Password?</Text>
             </TouchableOpacity>

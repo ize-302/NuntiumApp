@@ -31,13 +31,13 @@ const Signup = ({ navigation }: ScreenProp) => {
             <View style={{ marginVertical: getHeight(8) }}></View>
             <PrimaryCustomTextInput placeholder="Email Address" icon="mail" />
             <View style={{ marginVertical: getHeight(8) }}></View>
-            <PasswordCustomTextInput placeholder="Password" />
+            <PasswordCustomTextInput placeholder="Password" icon="" />
             <View style={{ marginVertical: getHeight(8) }}></View>
-            <PasswordCustomTextInput placeholder="Repeat Password" />
+            <PasswordCustomTextInput placeholder="Repeat Password" icon="" />
             <View style={{ marginVertical: getHeight(8) }}></View>
             <PrimaryButton
               text="Sign Up"
-              onPress={() => navigation.navigate("")}
+              onPress={() => navigation.navigate("SetFavouriteTopics")}
             />
           </View>
         </View>
