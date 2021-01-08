@@ -12,7 +12,7 @@ import getGlobalStyles from "../../styles/globalStyles";
 import getStyles from "./styles";
 import { getWidth, getHeight } from "../../styles/index";
 
-const AppIntro = ({ navigation }) => {
+const AppIntro = ({ navigation }: ScreenProp) => {
   const globalStyles = getGlobalStyles();
   const styles = getStyles();
 
