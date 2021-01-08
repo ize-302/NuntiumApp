@@ -5,7 +5,12 @@ import { Text, TextInput, View, TouchableOpacity } from "react-native";
 import { colors, getWidth } from "../../styles";
 import Icon from "../Icon";
 
-export const PrimaryCustomTextInput = ({ placeholder, icon }) => {
+type Props = {
+  placeholder: string;
+  icon: string;
+};
+
+export const PrimaryCustomTextInput = ({ placeholder, icon }: Props) => {
   const globalStyles = getGlobalStyles();
   const styles = getStyles();
   const [isFocused, setisFocused] = useState(false);
@@ -37,7 +42,7 @@ export const PrimaryCustomTextInput = ({ placeholder, icon }) => {
   );
 };
 
-export const PasswordCustomTextInput = () => {
+export const PasswordCustomTextInput = ({ placeholder }: Props) => {
   const globalStyles = getGlobalStyles();
   const styles = getStyles();
   const [isFocused, setisFocused] = useState(false);
@@ -64,7 +69,7 @@ export const PasswordCustomTextInput = () => {
       />
       <TextInput
         secureTextEntry={isVisible}
-        placeholder="Password"
+        placeholder={placeholder}
         style={styles.primaryTextInputArea}
         onBlur={handleBlur}
         onFocus={handleFocus}
