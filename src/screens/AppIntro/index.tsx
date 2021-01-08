@@ -47,7 +47,7 @@ const AppIntro = ({ navigation }) => {
     // @ts-ignore
     if (state.activeItem < 2) return ref?.current?.snapToNext();
     if (state.activeItem === 2) {
-      navigation.push("GetStarted");
+      navigation.push("Intro");
     }
   };
 
