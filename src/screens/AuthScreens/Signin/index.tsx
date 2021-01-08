@@ -8,9 +8,7 @@ import {
 } from "../../../components/Inputs";
 import { PrimaryButton } from "../../../components/Buttons";
 import { colors, getHeight } from "../../../styles";
-import { Colors } from "react-native/Libraries/NewAppScreen";
 import AltAuth from "../../../components/AltAuth";
-import Navigation from "../../..";
 
 const Signin = ({ navigation }: ScreenProp) => {
   const styles = getStyles();
@@ -30,7 +28,10 @@ const Signin = ({ navigation }: ScreenProp) => {
             <PrimaryCustomTextInput placeholder="Email Address" icon="mail" />
             <View style={{ marginVertical: getHeight(8) }}></View>
             <PasswordCustomTextInput placeholder="Password" icon="" />
-            <TouchableOpacity style={styles.forgotPassword}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate("ForgotPassword")}
+              style={styles.forgotPassword}
+            >
               <Text style={[styles.forgotPasswordText]}>Forgot Password?</Text>
             </TouchableOpacity>
             <PrimaryButton

@@ -10,6 +10,9 @@ import IntroScreen from "./screens/AppIntro/intro";
 import SigninScreen from "./screens/AuthScreens/Signin";
 import SignupScreen from "./screens/AuthScreens/Signup";
 import SetFavouriteTopicsScreen from "./screens/AuthScreens/SetFavouriteTopics";
+import ForgotPasswordScreen from "./screens/AuthScreens/ForgotPassword";
+import VerificationCodeScreen from "./screens/AuthScreens/VerificationCode";
+import CreateNewPasswordScreen from "./screens/AuthScreens/CreateNewPassword";
 
 const Stack = createStackNavigator();
 
@@ -24,6 +27,15 @@ const Navigation = () => {
         <Stack.Screen
           name="SetFavouriteTopics"
           component={SetFavouriteTopicsScreen}
+        />
+        <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} />
+        <Stack.Screen
+          name="VerificationCode"
+          component={VerificationCodeScreen}
+        />
+        <Stack.Screen
+          name="CreateNewPassword"
+          component={CreateNewPasswordScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>

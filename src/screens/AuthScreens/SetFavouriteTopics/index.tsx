@@ -2,15 +2,8 @@ import React, { useState } from "react";
 import { View, SafeAreaView, Text, TouchableOpacity } from "react-native";
 import getStyles from "./styles";
 import getGlobalStyles from "../../../styles/globalStyles";
-import {
-  PrimaryCustomTextInput,
-  PasswordCustomTextInput,
-} from "../../../components/Inputs";
 import { PrimaryButton } from "../../../components/Buttons";
 import { colors, getHeight } from "../../../styles";
-import { Colors } from "react-native/Libraries/NewAppScreen";
-import AltAuth from "../../../components/AltAuth";
-import Navigation from "../../..";
 
 const SetFavouriteTopics = ({ navigation }: ScreenProp) => {
   const styles = getStyles();
