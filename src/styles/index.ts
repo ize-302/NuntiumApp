@@ -44,4 +44,6 @@ export const colors = {
   primary: "#475AD7",
   blackPrimary: "#333647",
   grayPrimary: "#7C82A1",
+  grayLighter: "#F3F4F6",
+  grayDarker: "#666C8E",
 };

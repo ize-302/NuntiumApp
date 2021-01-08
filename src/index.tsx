@@ -7,6 +7,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 // screens
 import AppIntroScreen from "./screens/AppIntro";
 import IntroScreen from "./screens/AppIntro/intro";
+import SigninScreen from "./screens/AuthScreens/Signin";
 
 const Stack = createStackNavigator();
 
@@ -16,6 +17,7 @@ const Navigation = () => {
       <Stack.Navigator initialRouteName="AppIntro" headerMode="none">
         <Stack.Screen name="AppIntro" component={AppIntroScreen} />
         <Stack.Screen name="Intro" component={IntroScreen} />
+        <Stack.Screen name="Signin" component={SigninScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
