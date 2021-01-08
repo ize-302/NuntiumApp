@@ -12,7 +12,7 @@ import getGlobalStyles from "../../styles/globalStyles";
 import getStyles from "./styles";
 import { getWidth, getHeight } from "../../styles/index";
 
-const AppIntro = ({ navigation }) => {
+const AppIntro = ({ navigation }: ScreenProp) => {
   const globalStyles = getGlobalStyles();
   const styles = getStyles();
 
@@ -47,7 +47,7 @@ const AppIntro = ({ navigation }) => {
     // @ts-ignore
     if (state.activeItem < 2) return ref?.current?.snapToNext();
     if (state.activeItem === 2) {
-      navigation.push("GetStarted");
+      navigation.push("Intro");
     }
   };
 

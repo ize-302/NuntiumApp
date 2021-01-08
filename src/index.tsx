@@ -6,7 +6,10 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 // screens
 import AppIntroScreen from "./screens/AppIntro";
-import GetStartedScreen from "./screens/AppIntro/getStarted";
+import IntroScreen from "./screens/AppIntro/intro";
+import SigninScreen from "./screens/AuthScreens/Signin";
+import SignupScreen from "./screens/AuthScreens/Signup";
+import SetFavouriteTopicsScreen from "./screens/AuthScreens/SetFavouriteTopics";
 
 const Stack = createStackNavigator();
 
@@ -15,7 +18,13 @@ const Navigation = () => {
     <NavigationContainer fallback={<View />}>
       <Stack.Navigator initialRouteName="AppIntro" headerMode="none">
         <Stack.Screen name="AppIntro" component={AppIntroScreen} />
-        <Stack.Screen name="GetStarted" component={GetStartedScreen} />
+        <Stack.Screen name="Intro" component={IntroScreen} />
+        <Stack.Screen name="Signin" component={SigninScreen} />
+        <Stack.Screen name="Signup" component={SignupScreen} />
+        <Stack.Screen
+          name="SetFavouriteTopics"
+          component={SetFavouriteTopicsScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
