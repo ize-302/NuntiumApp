@@ -36,7 +36,7 @@ const Signin = ({ navigation }: ScreenProp) => {
             </TouchableOpacity>
             <PrimaryButton
               text="Sign In"
-              onPress={() => navigation.navigate("")}
+              onPress={() => navigation.navigate("App")}
             />
           </View>
 

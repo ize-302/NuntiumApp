@@ -106,7 +106,7 @@ const SetFavouriteTopics = ({ navigation }: ScreenProp) => {
             </View>
             <PrimaryButton
               text="Next"
-              onPress={() => navigation.navigate("")}
+              onPress={() => navigation.navigate("App")}
             />
           </View>
         </View>
