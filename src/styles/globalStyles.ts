@@ -33,6 +33,28 @@ const styles = () => {
       color: colors.grayPrimary,
       marginBottom: getHeight(32),
     },
+    tabs: {
+      borderColor: colors.primary,
+      borderTopWidth: 1,
+      height: getHeight(75),
+    },
+    tabStyle: {
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    tag: {
+      height: getHeight(32),
+      paddingHorizontal: getWidth(16),
+      borderRadius: 16,
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    tagText: {
+      fontFamily: "SF_Medium",
+      letterSpacing: 1,
+    },
   });
 };
 

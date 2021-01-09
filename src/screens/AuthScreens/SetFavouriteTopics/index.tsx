@@ -4,6 +4,7 @@ import getStyles from "./styles";
 import getGlobalStyles from "../../../styles/globalStyles";
 import { PrimaryButton } from "../../../components/Buttons";
 import { colors, getHeight } from "../../../styles";
+import { CategoryCard } from "../../../components/Cards";
 
 const SetFavouriteTopics = ({ navigation }: ScreenProp) => {
   const styles = getStyles();
@@ -80,33 +81,17 @@ const SetFavouriteTopics = ({ navigation }: ScreenProp) => {
             <View style={styles.grid}>
               {topics.map((topic, index) => {
                 return (
-                  <TouchableOpacity
-                    onPress={() => handleToggleCheck(topic)}
+                  <CategoryCard
                     key={index}
-                    style={[
-                      styles.gridItem,
-                      {
-                        backgroundColor: topic.checked
-                          ? colors.primary
-                          : colors.grayLighter,
-                      },
-                    ]}
-                  >
-                    <Text
-                      style={[
-                        styles.gridItemText,
-                        { color: topic.checked ? "white" : colors.grayDarker },
-                      ]}
-                    >
-                      {topic.name}
-                    </Text>
-                  </TouchableOpacity>
+                    topic={topic}
+                    onPress={() => handleToggleCheck(topic)}
+                  />
                 );
               })}
             </View>
             <PrimaryButton
               text="Next"
-              onPress={() => navigation.navigate("")}
+              onPress={() => navigation.navigate("App")}
             />
           </View>
         </View>

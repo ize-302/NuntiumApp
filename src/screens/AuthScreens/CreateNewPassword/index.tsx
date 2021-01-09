@@ -19,9 +19,9 @@ const CreateNewPassword = ({ navigation }: ScreenProp) => {
         </Text>
 
         <View>
-          <PasswordCustomTextInput placeholder="New Password" icon="" />
+          <PasswordCustomTextInput placeholder="New Password" />
           <View style={{ marginVertical: getHeight(8) }}></View>
-          <PasswordCustomTextInput placeholder="Repeat New Password" icon="" />
+          <PasswordCustomTextInput placeholder="Repeat New Password" />
           <View style={{ marginVertical: getHeight(8) }}></View>
           <PrimaryButton
             text="Confirm"

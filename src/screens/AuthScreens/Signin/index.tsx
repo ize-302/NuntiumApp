@@ -27,7 +27,7 @@ const Signin = ({ navigation }: ScreenProp) => {
           <View>
             <PrimaryCustomTextInput placeholder="Email Address" icon="mail" />
             <View style={{ marginVertical: getHeight(8) }}></View>
-            <PasswordCustomTextInput placeholder="Password" icon="" />
+            <PasswordCustomTextInput placeholder="Password" />
             <TouchableOpacity
               onPress={() => navigation.navigate("ForgotPassword")}
               style={styles.forgotPassword}
@@ -36,7 +36,7 @@ const Signin = ({ navigation }: ScreenProp) => {
             </TouchableOpacity>
             <PrimaryButton
               text="Sign In"
-              onPress={() => navigation.navigate("")}
+              onPress={() => navigation.navigate("App")}
             />
           </View>
 
