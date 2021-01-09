@@ -28,9 +28,9 @@ const Signup = ({ navigation }: ScreenProp) => {
             <View style={{ marginVertical: getHeight(8) }}></View>
             <PrimaryCustomTextInput placeholder="Email Address" icon="mail" />
             <View style={{ marginVertical: getHeight(8) }}></View>
-            <PasswordCustomTextInput placeholder="Password" icon="" />
+            <PasswordCustomTextInput placeholder="Password" />
             <View style={{ marginVertical: getHeight(8) }}></View>
-            <PasswordCustomTextInput placeholder="Repeat Password" icon="" />
+            <PasswordCustomTextInput placeholder="Repeat Password" />
             <View style={{ marginVertical: getHeight(8) }}></View>
             <PrimaryButton
               text="Sign Up"

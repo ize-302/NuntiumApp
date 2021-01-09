@@ -5,12 +5,15 @@ import { Text, TextInput, View, TouchableOpacity } from "react-native";
 import { colors, getWidth } from "../../styles";
 import Icon from "../Icon";
 
-type Props = {
+type TextInputProps = {
   placeholder: string;
   icon: string;
 };
 
-export const PrimaryCustomTextInput = ({ placeholder, icon }: Props) => {
+export const PrimaryCustomTextInput = ({
+  placeholder,
+  icon,
+}: TextInputProps) => {
   const globalStyles = getGlobalStyles();
   const styles = getStyles();
   const [isFocused, setisFocused] = useState(false);
@@ -42,7 +45,12 @@ export const PrimaryCustomTextInput = ({ placeholder, icon }: Props) => {
   );
 };
 
-export const PasswordCustomTextInput = ({ placeholder }: Props) => {
+type PasswordInputProps = {
+  placeholder: string;
+};
+export const PasswordCustomTextInput = ({
+  placeholder,
+}: PasswordInputProps) => {
   const globalStyles = getGlobalStyles();
   const styles = getStyles();
   const [isFocused, setisFocused] = useState(false);
@@ -76,6 +84,45 @@ export const PasswordCustomTextInput = ({ placeholder }: Props) => {
       />
       <TouchableOpacity onPress={() => toggleVisibility()}>
         <Icon name="eye" />
+      </TouchableOpacity>
+    </View>
+  );
+};
+
+//
+type SearchInputProps = {
+  placeholder: string;
+};
+export const SearchCustomTextInput = ({ placeholder }: SearchInputProps) => {
+  const globalStyles = getGlobalStyles();
+  const styles = getStyles();
+  const [isFocused, setisFocused] = useState(false);
+
+  const handleFocus = () => setisFocused(true);
+  const handleBlur = () => setisFocused(false);
+
+  return (
+    <View
+      style={[
+        styles.primaryTextInputStyle,
+        {
+          borderColor: isFocused ? colors.primary : "transparent",
+          backgroundColor: isFocused ? "transparent" : colors.grayLighter,
+        },
+      ]}
+    >
+      <Icon
+        name="search"
+        color={isFocused ? colors.primary : colors.grayPrimary}
+      />
+      <TextInput
+        placeholder={placeholder}
+        style={styles.primaryTextInputArea}
+        onBlur={handleBlur}
+        onFocus={handleFocus}
+      />
+      <TouchableOpacity>
+        <Icon name="microphone" />
       </TouchableOpacity>
     </View>
   );

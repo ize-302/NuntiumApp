@@ -14,19 +14,6 @@ const styles = () => {
       justifyContent: "space-between",
       flexWrap: "wrap",
     },
-    gridItem: {
-      height: getHeight(72),
-      borderRadius: 12,
-      width: "48%",
-      marginBottom: getHeight(16),
-      flexDirection: "row",
-      alignItems: "center",
-      justifyContent: "space-around",
-    },
-    gridItemText: {
-      fontFamily: "SF_Medium",
-      fontSize: getHeight(16),
-    },
   });
 };
 
