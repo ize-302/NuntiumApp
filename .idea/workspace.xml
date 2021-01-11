@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e674fed-31fb-455d-a3d0-8863ded7d7a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/screens/Profile/ChangePassword/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Icon/markup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Icon/markup.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Profile/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Profile/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Profile/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Profile/styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenrecord.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,11 +15,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1mvQM3C0EOsH0OS8keTwmkDDdp4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -38,7 +40,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610371535285</updated>
       <workItem from="1610371537255" duration="36000" />
-      <workItem from="1610374502677" duration="3120000" />
+      <workItem from="1610374502677" duration="5038000" />
     </task>
     <servers />
   </component>
@@ -55,5 +57,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
