@@ -30,8 +30,8 @@ Artist - [https://ui8.net/eren-uiux-designer/products?status=7](https://ui8.net/
 
 ## Project
 
-[https://expo.io/@ozorku/nuntium-app](https://expo.io/@ozorku/nuntium-app)
+[https://expo.io/@ozorku/NuntiumApp](https://expo.io/@ozorku/NuntiumApp)
 
 ## Demo
 
-[https://exp.host/@ozorku/nuntium-app](https://exp.host/@ozorku/nuntium-app)
+[https://exp.host/@ozorku/NuntiumApp](https://exp.host/@ozorku/NuntiumApp)
