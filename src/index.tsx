@@ -20,6 +20,11 @@ import HomeScreen from "./screens/Home";
 import CategoriesScreen from "./screens/Categories";
 import BookmarksScreen from "./screens/Bookmarks";
 import ProfileScreen from "./screens/Profile";
+import ReadPostScreen from "./screens/ReadPost";
+import LanguageScreen from "./screens/Profile/Language";
+import ChangePasswordScreen from "./screens/Profile/ChangePassword";
+import TermsScreen from "./screens/Profile/Terms";
+import PrivacyScreen from "./screens/Profile/Privacy";
 
 const Tab = createBottomTabNavigator();
 
@@ -107,6 +112,11 @@ const Navigation = () => {
           name="CreateNewPassword"
           component={CreateNewPasswordScreen}
         />
+        <Stack.Screen name="ReadPost" component={ReadPostScreen} />
+        <Stack.Screen name="Language" component={LanguageScreen} />
+        <Stack.Screen name="ChangePassword" component={ChangePasswordScreen} />
+        <Stack.Screen name="Terms" component={TermsScreen} />
+        <Stack.Screen name="Privacy" component={PrivacyScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
