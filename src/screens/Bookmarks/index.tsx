@@ -53,7 +53,7 @@ const Bookmarks = ({ navigation }: ScreenProp) => {
               return (
                 <PostCard
                   post={post}
-                  onPress={() => navigation.navigate("postDetail")}
+                  onPress={() => navigation.navigate("ReadPost")}
                   key={index}
                 />
               );

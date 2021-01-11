@@ -20,6 +20,7 @@ import HomeScreen from "./screens/Home";
 import CategoriesScreen from "./screens/Categories";
 import BookmarksScreen from "./screens/Bookmarks";
 import ProfileScreen from "./screens/Profile";
+import ReadPostScreen from "./screens/ReadPost";
 
 const Tab = createBottomTabNavigator();
 
@@ -107,6 +108,7 @@ const Navigation = () => {
           name="CreateNewPassword"
           component={CreateNewPasswordScreen}
         />
+        <Stack.Screen name="ReadPost" component={ReadPostScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -44,7 +44,7 @@ const styles = () => {
       alignItems: "center",
     },
     tag: {
-      height: getHeight(32),
+      height: 32,
       paddingHorizontal: getWidth(16),
       borderRadius: 16,
       flexDirection: "row",
@@ -54,6 +54,7 @@ const styles = () => {
     tagText: {
       fontFamily: "SF_Medium",
       letterSpacing: 1,
+      fontSize: getHeight(12),
     },
   });
 };
